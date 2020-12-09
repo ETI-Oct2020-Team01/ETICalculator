@@ -1,10 +1,10 @@
 import pytest
-from mycalculator.my_calculator_functions import *
+from mycalculator.my_calculator_functions import multiply
 
 
 def test_multiply():
     value = multiply(1,1,1,1,1,1,1,1,1,1,1)
-    assert value == "Error >10 values given!"
+    assert value == "Error: >10 Values"
 
 def test_multiply_positive_positive():
     value = multiply(1,2,3)
