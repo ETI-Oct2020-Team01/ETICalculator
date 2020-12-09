@@ -1,0 +1,25 @@
+name:  Whatsapp Notify
+on:
+  issue_comment:
+    types: created
+  pull_request:
+    types: [opened, closed, edited, ready_for_review, review_requested, reopened]
+  issues:
+    types: [opened, edited, pinned, closed, reopened, assigned, labeled]
+  page_build:
+  watch:
+    types: [started]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: wa-notify
+        uses: mdb571/wa-action@master
+        with:
+          from: ${{+14155238886}}
+          to: ${{+6590736979}}
+        env:
+          TWILIO_ACCOUNT_SID: ${{AC3a87997b81c77b316392d491b6af6aa1}}
+          TWILIO_AUTH_TOKEN: ${{c73faaf5a75907c48c6c73029fc46f61}}
