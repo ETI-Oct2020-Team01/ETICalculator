@@ -18,8 +18,8 @@ jobs:
       - name: wa-notify
         uses: mdb571/wa-action@master
         with:
-          from: ${{+14155238886}}
-          to: ${{+6590736979}}
+          from: ${{ secrets.FROM }}
+          to: ${{secrets.TO }}
         env:
-          TWILIO_ACCOUNT_SID: ${{ACf0e15de5b4a73915b75de65fa0a87126}}
-          TWILIO_AUTH_TOKEN: ${{77c16a0f30ae75f028b82bf827dc0abd}}
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH }}
