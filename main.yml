@@ -21,5 +21,5 @@ jobs:
           from: ${{+14155238886}}
           to: ${{+6590736979}}
         env:
-          TWILIO_ACCOUNT_SID: ${{SKcf3bde240fb4cce54dcb202347ebb3d9}}
-          TWILIO_AUTH_TOKEN: ${{0EDpZTJCjiAHZ3KTrK8VnCq1PGZ4vis3}}
+          TWILIO_ACCOUNT_SID: ${{SK21abe1dd905c397e8572545611c83a77}}
+          TWILIO_AUTH_TOKEN: ${{Go2htcZBCuiOTVayo8HgvUzkNvJdk9Rp}}
